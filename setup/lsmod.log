@@ -1,0 +1,92 @@
+Module                  Size  Used by
+rpcsec_gss_krb5        31453  0 
+auth_rpcgss            59528  1 rpcsec_gss_krb5
+nfsv4                 587697  1 
+dns_resolver           13140  1 nfsv4
+nfs                   270158  2 nfsv4
+ec_generic             13125  0 
+lockd                  98081  1 nfs
+ec_master             272766  1 ec_generic
+grace                  13515  1 lockd
+fscache                65236  2 nfs,nfsv4
+xt_nat                 12681  1 
+iptable_nat            12875  1 
+nf_conntrack_ipv4      15053  1 
+nf_defrag_ipv4         12729  1 nf_conntrack_ipv4
+nf_nat_ipv4            14115  1 iptable_nat
+nf_nat                 26583  2 nf_nat_ipv4,xt_nat
+nf_conntrack          184424  3 nf_nat,nf_nat_ipv4,nf_conntrack_ipv4
+sunrpc                362855  9 nfs,rpcsec_gss_krb5,auth_rpcgss,lockd,nfsv4
+snd_hda_codec_hdmi     52340  0 
+snd_hda_codec_realtek   111414  1 
+snd_hda_codec_generic    74401  1 snd_hda_codec_realtek
+intel_powerclamp       14451  0 
+coretemp               13444  0 
+intel_rapl             19451  0 
+crc32_pclmul           13133  0 
+ghash_clmulni_intel    13273  0 
+i915                 1872265  0 
+aesni_intel           193557  1 
+lrw                    13286  1 aesni_intel
+gf128mul               15139  1 lrw
+glue_helper            13990  1 aesni_intel
+snd_soc_skl            99144  0 
+ablk_helper            13597  1 aesni_intel
+cryptd                 21189  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+snd_soc_skl_ipc        59641  1 snd_soc_skl
+snd_hda_ext_core       26337  1 snd_soc_skl
+snd_soc_sst_dsp        27578  1 snd_soc_skl_ipc
+snd_soc_sst_ipc        14266  1 snd_soc_skl_ipc
+wdat_wdt               13590  0 
+sg                     40791  0 
+snd_soc_acpi           13686  1 snd_soc_skl
+snd_soc_core          242180  1 snd_soc_skl
+snd_compress           19556  1 snd_soc_core
+snd_hda_intel          40259  0 
+iosf_mbi               15582  2 i915,intel_rapl
+snd_hda_codec         136060  4 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_intel
+drm_kms_helper        186567  1 i915
+snd_hda_core           91007  7 snd_hda_codec_realtek,snd_hda_ext_core,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel,snd_soc_skl
+syscopyarea            12529  1 drm_kms_helper
+snd_hwdep              13608  1 snd_hda_codec
+sysfillrect            12701  1 drm_kms_helper
+snd_pcm               105821  7 snd_hda_ext_core,snd_soc_core,snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel,snd_soc_skl,snd_hda_core
+sysimgblt              12640  1 drm_kms_helper
+video                  24538  1 i915
+fb_sys_fops            12703  1 drm_kms_helper
+mei_me                 32848  0 
+snd_timer              34080  1 snd_pcm
+pinctrl_broxton        35721  0 
+drm                   460961  2 i915,drm_kms_helper
+pinctrl_intel          23466  1 pinctrl_broxton
+snd                    84049  10 snd_hda_codec_realtek,snd_soc_core,snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_pcm,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel,snd_compress
+mei                    95246  1 mei_me
+lpc_ich                21086  0 
+i2c_i801               22637  0 
+pcc_cpufreq            14104  0 
+drm_panel_orientation_quirks    17180  1 drm
+soundcore              15047  1 snd
+acpi_cpufreq           19811  0 
+pcspkr                 12718  0 
+ip_tables              27126  1 iptable_nat
+xfs                  1018311  3 
+libcrc32c              12644  3 xfs,nf_nat,nf_conntrack
+sd_mod                 46281  3 
+crc_t10dif             12912  1 sd_mod
+crct10dif_generic      12647  0 
+crct10dif_pclmul       14307  1 
+crct10dif_common       12595  3 crct10dif_pclmul,crct10dif_generic,crc_t10dif
+crc32c_intel           22094  1 
+ahci                   34056  2 
+igb                   215835  0 
+serio_raw              13434  0 
+libahci                32028  1 ahci
+ptp                    19267  1 igb
+pps_core               19093  1 ptp
+i2c_algo_bit           13413  2 igb,i915
+libata                243259  2 ahci,libahci
+dca                    15166  1 igb
+dm_mirror              22279  0 
+dm_region_hash         20885  1 dm_mirror
+dm_log                 18411  2 dm_region_hash,dm_mirror
+dm_mod                128741  11 dm_log,dm_mirror
