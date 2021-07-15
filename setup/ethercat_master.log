@@ -1,0 +1,33 @@
+Master0
+  Phase: Idle
+  Active: no
+  Slaves: 11
+  Ethernet devices:
+    Main: 78:d0:04:2a:9d:6e (attached)
+      Link: UP
+      Tx frames:   4091811
+      Tx bytes:    1335328728
+      Rx frames:   4091808
+      Rx bytes:    1335328548
+      Tx errors:   0
+      Tx frame rate [1/s]:    500    500    500
+      Tx rate [KByte/s]:     29.3   29.3   29.3
+      Rx frame rate [1/s]:    500    500    500
+      Rx rate [KByte/s]:     29.3   29.3   29.3
+    Common:
+      Tx frames:   4091811
+      Tx bytes:    1335328728
+      Rx frames:   4091808
+      Rx bytes:    1335328548
+      Lost frames: 3
+      Tx frame rate [1/s]:    500    500    500
+      Tx rate [KByte/s]:     29.3   29.3   29.3
+      Rx frame rate [1/s]:    500    500    500
+      Rx rate [KByte/s]:     29.3   29.3   29.3
+      Loss rate [1/s]:          0     -0      0
+      Frame loss [%]:         0.0   -0.0    0.0
+  Distributed clocks:
+    Reference clock:   Slave 0
+    DC reference time: 0
+    Application time:  0
+                       2000-01-01 00:00:00.000000000

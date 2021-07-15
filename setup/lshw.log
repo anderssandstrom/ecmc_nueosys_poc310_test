@@ -1,0 +1,241 @@
+test-ipc-wp12-01.cslab.esss.lu.se
+    description: Computer
+    width: 64 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 4GiB
+     *-cpu
+          product: Intel(R) Atom(TM) Processor E3950 @ 1.60GHz
+          vendor: Intel Corp.
+          vendor_id: GenuineIntel
+          physical id: 1
+          bus info: cpu@0
+          version: 6.92.10
+          size: 1601MHz
+          capacity: 1601MHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave rdrand lahf_lm 3dnowprefetch cat_l2 intel_pt ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust smep erms mpx rdt_a rdseed smap clflushopt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts md_clear spec_ctrl intel_stibp arch_capabilities cpufreq
+          configuration: microcode=0
+     *-pci
+          description: Host bridge
+          product: Celeron N3350/Pentium N4200/Atom E3900 Series Host Bridge
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 0d
+          width: 32 bits
+          clock: 33MHz
+        *-display UNCLAIMED
+             description: VGA compatible controller
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series Integrated Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 0d
+             width: 64 bits
+             clock: 33MHz
+             capabilities: vga_controller bus_master cap_list
+             configuration: latency=0
+             resources: memory:90000000-90ffffff memory:80000000-8fffffff ioport:4000(size=64)
+        *-multimedia
+             description: Audio device
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series Audio Cluster
+             vendor: Intel Corporation
+             physical id: e
+             bus info: pci@0000:00:0e.0
+             version: 0d
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:141 memory:91410000-91413fff memory:91000000-910fffff
+        *-communication
+             description: Communication controller
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series Trusted Execution Engine
+             vendor: Intel Corporation
+             physical id: f
+             bus info: pci@0000:00:0f.0
+             version: 0d
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: irq:140 memory:91416000-91416fff
+        *-sata
+             description: SATA controller
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series SATA AHCI Controller
+             vendor: Intel Corporation
+             physical id: 12
+             bus info: pci@0000:00:12.0
+             version: 0d
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:129 memory:91414000-91415fff memory:91419000-914190ff ioport:4080(size=8) ioport:4088(size=4) ioport:4060(size=32) memory:91417000-914177ff
+        *-pci:0
+             description: PCI bridge
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series PCI Express Port A #3
+             vendor: Intel Corporation
+             physical id: 13
+             bus info: pci@0000:00:13.0
+             version: fd
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:120 ioport:3000(size=4096) memory:91300000-913fffff
+           *-network
+                description: Ethernet interface
+                product: I210 Gigabit Network Connection
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                logical name: enp1s0
+                version: 03
+                serial: 78:d0:04:2a:9d:6e
+                size: 100Mbit/s
+                capacity: 1Gbit/s
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=igb driverversion=5.6.0-k duplex=full firmware=3.16, 0x800004d8 latency=0 link=yes multicast=yes port=twisted pair speed=100Mbit/s
+                resources: irq:20 memory:91300000-9137ffff ioport:3000(size=32) memory:91380000-91383fff
+        *-pci:1
+             description: PCI bridge
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series PCI Express Port A #4
+             vendor: Intel Corporation
+             physical id: 13.3
+             bus info: pci@0000:00:13.3
+             version: fd
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:121 ioport:2000(size=4096) memory:91200000-912fffff
+           *-network DISABLED
+                description: Ethernet interface
+                product: I210 Gigabit Network Connection
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: enp2s0
+                version: 03
+                serial: 78:d0:04:2a:9d:6f
+                capacity: 1Gbit/s
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=igb driverversion=5.6.0-k firmware=3.16, 0x800004d8 latency=0 link=no multicast=yes port=twisted pair
+                resources: irq:21 memory:91200000-9127ffff ioport:2000(size=32) memory:91280000-91283fff
+        *-pci:2
+             description: PCI bridge
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series PCI Express Port B #1
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: fd
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:122 ioport:1000(size=4096) memory:91100000-911fffff
+           *-network
+                description: Ethernet interface
+                product: I210 Gigabit Network Connection
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                logical name: enp3s0
+                version: 03
+                serial: 78:d0:04:29:73:7f
+                size: 1Gbit/s
+                capacity: 1Gbit/s
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=igb driverversion=5.6.0-k duplex=full firmware=3.16, 0x800004d8 ip=172.30.2.50 latency=0 link=yes multicast=yes port=twisted pair speed=1Gbit/s
+                resources: irq:22 memory:91100000-9117ffff ioport:1000(size=32) memory:91180000-91183fff
+        *-usb
+             description: USB controller
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series USB xHCI
+             vendor: Intel Corporation
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 0d
+             width: 64 bits
+             clock: 33MHz
+             capabilities: xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:123 memory:91400000-9140ffff
+        *-isa
+             description: ISA bridge
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series Low Pin Count Interface
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 0d
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-serial
+             description: SMBus
+             product: Celeron N3350/Pentium N4200/Atom E3900 Series SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.1
+             bus info: pci@0000:00:1f.1
+             version: 0d
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:20 memory:91418000-914180ff ioport:4040(size=32)
+     *-pnp00:00
+          product: PnP device PNP0c02
+          physical id: 2
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:01
+          product: PnP device PNP0501
+          physical id: 3
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:02
+          product: PnP device PNP0501
+          physical id: 4
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:03
+          product: PnP device PNP0501
+          physical id: 5
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:04
+          product: PnP device PNP0501
+          physical id: 6
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:05
+          product: PnP device PNP0501
+          physical id: 7
+          capabilities: pnp
+     *-pnp00:06
+          product: PnP device PNP0f03
+          physical id: 8
+          capabilities: pnp
+          configuration: driver=i8042 aux
+     *-pnp00:07
+          product: PnP device PNP0c02
+          physical id: 9
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:08
+          product: PnP device PNP0b00
+          physical id: a
+          capabilities: pnp
+          configuration: driver=rtc_cmos
